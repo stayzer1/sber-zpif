@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="main__body">
+    <!-- Header -->
+    @@include('./html/_header.html')
+
+    <!-- Main Page -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <section class="hero">
+            <div class="container">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Как инвестировать <br />
+                  и получать регулярный <br class="br-mobile-third"> доход<span class="hero__title-star"
+                    >*</span
+                  ><br class="br-mobile" />
+                  с помощью <br class="br-mobile-second">
+                  <div class="hero__title__subtext">
+                    <span class="hero__title__subtext-label">недвижимости</span>
+                  </div>
+                  ?
+                </h1>
+                <h2 class="hero__subtitle">
+                  Вкладывать денежные средства в высококлассную коммерческую
+                  недвижимость <span>от 30 000 рублей</span>
+                </h2>
+                <button class="hero--btn">Инвестировать</button>
+              </div>
+              <div class="hero__background">
+                <img
+                  src="img/1_first_frame.jpg"
+                  alt=""
+                  class="hero__background--cover"
+                  style="display: none"
+                />
+                <video
+                  src="video/first-video.mp4"
+                  muted="muted"
+                  playinline
+                  autoplay
+                  preload="auto"
+                ></video>
+                <video
+                  src="video/second-video.mp4"
+                  muted="muted"
+                  playinline
+                  loop
+                  preload="auto"
+                ></video>
+              </div>
+            </div>
+          </section>
+          <section class="why">
+            <div class="container">
+              <div class="why__card">
+                <h1 class="why__title">
+                  <span class="why__title--gradient">Зачем</span> инвестировать в коммерческую недвижимость?
+                </h1>
+                <div class="why__card--items">
+                  <div class="why__card__item">
+                    <img src="img/icon_tick.svg" alt="">
+                    <span class="why__card__item--text"> Защитить капитал от инфляции. Цена на недвижимость может увеличиваться в связи с ростом стоимости строительства и дефицитом на рынке складов класса А. </span>
+                  </div>
+                  <div class="why__card__item">
+                    <img src="img/icon_tick.svg" alt="">
+                    <span class="why__card__item--text"> Получать ежеквартальный доход* от сдачи объектов недвижимости в аренду и сохранять привычный уровень жизни. </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- @@include('./html/_footer.html') -->
+  </body>
+  <script></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="./js/scripts.min.js"></script>
+</html>

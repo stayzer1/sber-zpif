@@ -1,0 +1,51 @@
+// Container
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 88px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 48px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+main {
+  overflow: hidden;
+}
+// Body Locked
+body {
+  &.locked {
+    overflow: hidden;
+  }
+}
+* {
+  font-family: "SB Sans Display", "Arial", "BlinkMacSystemFont", "-apple-system",
+    "segoe ui", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "open sans",
+    "helvetica neue", sans-serif;
+}
+html {
+  background-color: #f4f8fa;
+}
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

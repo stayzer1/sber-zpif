@@ -1,0 +1,11 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_tick">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM19.1865 26.0548L30.0665 15.0549L27.9335 12.9453L18.0943 22.8929L13.0404 18.0266L10.9596 20.1877L17.0796 26.0805L18.1457 27.1071L19.1865 26.0548Z" fill="url(#paint0_linear_2133_3016)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2133_3016" x1="1.5711" y1="-2.6392" x2="50.8608" y2="10.8196" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00D900"/>
+<stop offset="1" stop-color="#FAED00"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,131 @@
+.why {
+  color: #fff;
+  margin-bottom: 100px;
+  .container {
+    // padding: 64px 40px 80px;
+    padding: 0;
+    max-width: 1440px;
+  }
+}
+.why__card {
+  align-items: center;
+  background: #222231;
+  border-radius: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  padding: 64px 40px 80px;
+  position: relative;
+  z-index: 5;
+}
+.why__title {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -1.92px;
+  line-height: 120%;
+  margin: 0 auto;
+  max-width: 704px;
+  text-align: center;
+}
+.why__title--gradient {
+  background-image: url(../img/why-invest-text-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 12px 10px;
+}
+.why__card--items {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 48px;
+}
+.why__card__item {
+  align-items: center;
+  background: linear-gradient(
+    122deg,
+    hsla(0, 0%, 100%, 0.08) -20.48%,
+    hsla(0, 0%, 100%, 0) 85.57%
+  );
+  border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 32px;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.why__card__item--text {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 140%;
+  margin-top: 16px;
+  max-width: 556px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .why__card {
+    align-items: normal;
+  }
+  .why__title {
+    max-width: 680px;
+  }
+  .why__card--items {
+    grid-template-columns: 1fr;
+  }
+  .why__card__item {
+    align-items: center;
+    flex-direction: row;
+    padding: 32px;
+    width: 100%;
+  }
+  .why__card__item--text {
+    max-width: 624px;
+    margin-left: 20px;
+    margin-top: 0;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .why {
+    margin-bottom: 56px;
+  }
+  .why__card {
+    border-radius: 48px;
+    padding: 32px 20px 20px;
+  }
+  .why__title {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .why__title {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 112%;
+    max-width: 320px;
+  }
+  .why__title--gradient {
+    padding: 0 8px 6px;
+  }
+  .why__card--items {
+    margin-top: 32px;
+  }
+  .why__card__item {
+    align-items: flex-start;
+    border-radius: 24px;
+    padding: 16px;
+    img {
+      height: 32px;
+      width: 32px;
+    }
+  }
+  .why__card__item--text {
+    font-size: 14px;
+    letter-spacing: -.056px;
+    line-height: 134%;
+  }
+}
