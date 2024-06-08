@@ -1,35 +1,5 @@
 // Custom
-document.addEventListener("DOMContentLoaded", function () {
-  var video1 = document.querySelector(".hero__background video:nth-of-type(1)");
-  var video2 = document.querySelector(".hero__background video:nth-of-type(2)");
 
-  video2.style.display = "none";
-
-  function playVideo(video) {
-    video.style.display = "block";
-    video
-      .play()
-      .then(function () {})
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
-
-  function onVideoEnded(e) {
-    var currentVideo = e.target;
-
-    if (currentVideo === video1) {
-      playVideo(video2);
-    } else {
-      playVideo(video1);
-    }
-  }
-
-  video1.addEventListener("ended", onVideoEnded);
-  video2.addEventListener("ended", onVideoEnded);
-
-  playVideo(video1);
-});
 // Custom Scripts
 
 /*!
@@ -1633,61 +1603,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Smooth Scroll
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-  smoothLink.addEventListener("click", function (e) {
-    e.preventDefault();
-    const id = smoothLink.getAttribute("href");
-
-    document.querySelector(id).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  });
-}
-document.addEventListener("DOMContentLoaded", function () {
-  let lastScrollTop = 0;
-  const header = document.querySelector("header");
-  const navbar = document.querySelector(".nav");
-  let isHeaderHidden = false;
-
-  function handleScroll() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-      // Прокрутка вниз
-      if (!isHeaderHidden) {
-        isHeaderHidden = true;
-        header.classList.add("header--hide");
-        header.classList.remove("header--show");
-      }
-    } else {
-      // Прокрутка вверх
-      if (isHeaderHidden) {
-        isHeaderHidden = false;
-        header.classList.remove("header--hide");
-        header.classList.add("header--show");
-      }
-      if (scrollTop < 60) {
-        navbar.classList.remove("header--scroll-up");
-      } else {
-        navbar.classList.add("header--scroll-up");
-      }
-    }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-  }
-
-  window.addEventListener("scroll", handleScroll);
-});
-
 // GSAP
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-ScrollSmoother.create({
+const smoother = ScrollSmoother.create({
+  wrapper: "#smooth-wrapper",
+  content: "#smooth-content",
   smooth: 2,
-  effects: false,
-  smoothTouch: 0.1,
+  effects: true,
+  smoothTouch: 1,
+  normalizeScroll: true,
+  preventDefault: true,
+
 });
 
 let tl = gsap.timeline({
@@ -1759,8 +1685,140 @@ let tl5 =  gsap.timeline({
 });
 tl5.to('.expert', {opacity: 0, y: "-15vh"})
 
+let tl6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".coowner",
+    start: "top+=20% bottom",
+    end: "center center",
+    scrub: 2,
+    invalidateOnRefresh: !0,
+  },
+})
+tl6.set([
+  '.coowner__title',
+  '.coowner__subtitle--1',
+  '.coowner__subtitle--2',
+  '.coowner--disclaimer',
+  '.coowner__second-container'
+], {opacity: 0, y: 30}),
+
+tl6.set('.coowner__item', {y: '20vh', opacity: 0});
+
+tl6.to('.coowner__title', {opacity: 1, y: 0, duration: 1}),
+tl6.to('.coowner__subtitle--1', {opacity: 1, y: 0, duration: 1}),
+tl6.to('.coowner__item', {opacity: 1, y: 0, duration: 1, stagger: 0.8, duration: 3}),
+tl6.to('.coowner--disclaimer', {opacity: 0.4, y: 0, duration: 1}),
+tl6.to('.coowner__subtitle--2', {opacity: 1, y: 0, duration: 1}),
+tl6.to('.coowner__second-container', {opacity: 1, y: 0, duration: 1}, '<');
+
+let tl7 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".coowner",
+    start: "bottom-=15% top",
+    end: "top bottom+=10%",
+    scrub: 2,
+    invalidateOnRefresh: !0,
+  },
+});
+tl7.to('.coowner', {opacity: 0})
+
+
+// Smooth Scroll
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute("href");
+
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+document.addEventListener("DOMContentLoaded", function () {
+  let lastScrollTop = 0;
+  const header = document.querySelector("header");
+  const navbar = document.querySelector(".nav");
+  let isHeaderHidden = false;
+
+  function handleScroll() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Прокрутка вниз
+      if (!isHeaderHidden) {
+        isHeaderHidden = true;
+        header.classList.add("header--hide");
+        header.classList.remove("header--show");
+      }
+    } else {
+      // Прокрутка вверх
+      if (isHeaderHidden) {
+        isHeaderHidden = false;
+        header.classList.remove("header--hide");
+        header.classList.add("header--show");
+      }
+      if (scrollTop < 60) {
+        navbar.classList.remove("header--scroll-up");
+      } else {
+        navbar.classList.add("header--scroll-up");
+      }
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  }
+
+  window.addEventListener("scroll", handleScroll);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var video1 = document.querySelector(".hero__background video:nth-of-type(1)");
+  var video2 = document.querySelector(".hero__background video:nth-of-type(2)");
+
+  video2.style.display = "none";
+
+  function playVideo(video) {
+    video.style.display = "block";
+    video
+      .play()
+      .then(function () {})
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  function onVideoEnded(e) {
+    var currentVideo = e.target;
+
+    if (currentVideo === video1) {
+      playVideo(video2);
+    } else {
+      playVideo(video1);
+    }
+  }
+
+  video1.addEventListener("ended", onVideoEnded);
+  video2.addEventListener("ended", onVideoEnded);
+
+  playVideo(video1);
+});
+
+
+
+
+
+const container = document.querySelector('.coowner--wrapper');
+
+gsap.to(container, {
+  x: -container.offsetWidth,
+  duration: 20,
+  repeat: -1,
+  ease: 'linear'
+});
+
+
+
 //BURGER
-// Мобильное меню бургер
 function burgerMenu() {
   const burger = document.querySelector(".burger");
   const menu = document.querySelector(".menu");
