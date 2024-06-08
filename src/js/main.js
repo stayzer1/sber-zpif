@@ -1689,30 +1689,201 @@ ScrollSmoother.create({
   effects: false,
   smoothTouch: 0.1,
 });
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "bottom center",
+    end: "bottom center",
+    scrub: 2,
+    invalidateOnRefresh: !0,
+  },
+});
+tl.to(".hero", { opacity: 0, y: "-20vh" });
+
+let tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".why",
+    start: "top bottom",
+    end: "center bottom",
+    scrub: !0,
+    invalidateOnRefresh: !0,
+  },
+});
+tl2.set(".why", { opacity: 0, y: 0 });
+tl2.to(".why", {
+  opacity: 1,
+  zIndex: 15,
+  position: "relative",
+});
+
+let tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".why",
+    start: "center top",
+    end: "bottom top",
+    scrub: !0,
+    invalidateOnRefresh: !0,
+  },
+});
+tl3.to(".why", { opacity: 0, y: "-10vh" });
+
+let tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".expert",
+    start: "top center+=20%",
+    end: "center center-=20",
+    scrub: 1,
+    invalidateOnRefresh: !0,
+  },
+});
+tl4.set([
+  '.expert__info__title',
+  '.expert__video',
+  '.expert__info--descr',
+  '.expert__more__item'
+], {opacity: 0, y: '5vh'})
+tl4.to('.expert__info__title', {opacity: 1, y: 0}),
+tl4.to('.expert__video', { opacity: 1, y: 0}, '<'),
+tl4.to('.expert__info--descr', { opacity: 1, y: 0}, '<'),
+tl4.to('.expert__more__item', { opacity: 1, y: 0, stagger: 0.4, delay: 1}, '<');
+
+let tl5 =  gsap.timeline({
+  scrollTrigger: {
+    trigger: ".expert",
+    start: "bottom center",
+    end: "bottom top",
+    scrub: !0,
+    invalidateOnRefresh: !0,
+  },
+});
+tl5.to('.expert', {opacity: 0, y: "-15vh"})
+
 //BURGER
 // Мобильное меню бургер
 function burgerMenu() {
-  const burger = document.querySelector('.burger')
-  const menu = document.querySelector('.menu')
-  const body = document.querySelector('body')
-  burger.addEventListener('click', () => {
-    if (!menu.classList.contains('active')) {
-      menu.classList.add('active')
-      burger.classList.add('active-burger')
-      body.classList.add('locked')
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector(".menu");
+  const body = document.querySelector("body");
+  burger.addEventListener("click", () => {
+    if (!menu.classList.contains("active")) {
+      menu.classList.add("active");
+      burger.classList.add("active-burger");
+      body.classList.add("locked");
     } else {
-      menu.classList.remove('active')
-      burger.classList.remove('active-burger')
-      body.classList.remove('locked')
+      menu.classList.remove("active");
+      burger.classList.remove("active-burger");
+      body.classList.remove("locked");
     }
-  })
+  });
   // Вот тут мы ставим брейкпоинт навбара
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     if (window.innerWidth > 1400) {
-      menu.classList.remove('active')
-      burger.classList.remove('active-burger')
-      body.classList.remove('locked')
+      menu.classList.remove("active");
+      burger.classList.remove("active-burger");
+      body.classList.remove("locked");
     }
-  })
+  });
 }
-burgerMenu()
+burgerMenu();
+
+//popup video
+const videoAttributes = {
+  button1: {
+    src: "https://player.cdn.sber.cloud/aloha/players/basic_player_sbercloud1.html?account=kunuqupo80&source=//sber-hls.cdnvideo.ru/sber-vod/_definst_/mp4:common/video/9de0e6ff2.mp4/playlist.m3u8&poster=https://sber.cdnvideo.ru/common/video/5_glavnykh_voprosov.png",
+    loading: "eager",
+    sandbox:
+      "allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation",
+    importance: "high",
+    allow:
+      "payment 'none'; fullscreen 'none'; geolocation 'none'; camera 'none'; microphone 'none'",
+    referrerpolicy: "no-referrer-when-downgrade",
+    frameborder: "no",
+    scrolling: "no",
+  },
+  button2: {
+    src: "https://player.cdn.sber.cloud/aloha/players/basic_player_sbercloud1.html?account=kunuqupo80&source=//sber-hls.cdnvideo.ru/sber-vod/_definst_/mp4:common/video/66f8b7651.mp4/playlist.m3u8&poster=https://sber.cdnvideo.ru/common/video/zpif_korotko_i_ponyatno_o_glavnom.png",
+    loading: "eager",
+    sandbox: "allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation",
+    allow="payment 'none'; fullscreen 'none'; geolocation 'none'; camera 'none'; microphone 'none'",
+    importance="high",
+    referrerpolicy="no-referrer-when-downgrade",
+    frameborder="no",
+    scrolling="no"
+  },
+  button3: {
+    src: "https://player.cdn.sber.cloud/aloha/players/basic_player_sbercloud1.html?account=kunuqupo80&source=//sber-hls.cdnvideo.ru/sber-vod/_definst_/mp4:common/video/3cecb74c1.mp4/playlist.m3u8&poster=https://sber.cdnvideo.ru/common/video/vybirayem_mezhdu_kvartiroy_i_skladom.png",
+    loading: "eager",
+    sandbox: "allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation",
+    allow="payment 'none'; fullscreen 'none'; geolocation 'none'; camera 'none'; microphone 'none'",
+    importance="high",
+    referrerpolicy="no-referrer-when-downgrade",
+    frameborder="no",
+    scrolling="no"
+  },
+  button4: {
+    src: "https://player.cdn.sber.cloud/aloha/players/basic_player_sbercloud1.html?account=kunuqupo80&source=//sber-hls.cdnvideo.ru/sber-vod/_definst_/mp4:common/video/3b33b7b41.mp4/playlist.m3u8&poster=https://sber.cdnvideo.ru/common/video/dokhod_prinosit_ne_lyubaya_nedvizhimost.png",
+    loading: "eager",
+    sandbox: "allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation",
+    allow="payment 'none'; fullscreen 'none'; geolocation 'none'; camera 'none'; microphone 'none'",
+    importance="high",
+    referrerpolicy="no-referrer-when-downgrade",
+    frameborder="no",
+    scrolling="no"
+  }
+};
+
+// Находим все кнопки с классом "video-button"
+const videoButtons = document.querySelectorAll(".video-button");
+const popupVideoContainer = document.querySelector(".popup__video__video");
+const popup = document.querySelector(".popup__video");
+
+// Перебираем кнопки и назначаем обработчик события на каждую
+videoButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const buttonClass = this.classList[1]; // предполагаем, что второй класс кнопки связан с iframe
+
+    // Проверяем, есть ли атрибуты для данного класса
+    if (videoAttributes.hasOwnProperty(buttonClass)) {
+      const iframeAttributes = videoAttributes[buttonClass];
+
+      const iframe = document.createElement("iframe");
+      // Устанавливаем атрибуты iframe из объекта videoAttributes для соответствующей кнопки
+      Object.keys(iframeAttributes).forEach((key) => {
+        iframe.setAttribute(key, iframeAttributes[key]);
+      });
+      // Устанавливаем src атрибут
+      iframe.src = iframeAttributes.src;
+      iframe.classList.add("pop-up-video__video");
+
+      // Очищаем содержимое "popup__video__video" перед вставкой нового iframe
+      popupVideoContainer.innerHTML = "";
+
+      // Вставляем iframe в "popup__video__video"
+      popupVideoContainer.appendChild(iframe);
+
+      // Отображаем блок с видео
+      popup.style.display = "flex";
+    } else {
+      console.error("Attributes not found for class", buttonClass);
+    }
+  });
+
+});
+const closePopupButton = document.querySelector('.popup__video--close');
+
+closePopupButton.addEventListener('click', function() {
+  // Удаляем iframe из контейнера
+  popupVideoContainer.innerHTML = '';
+  // Скрываем блок с видео
+  popup.style.display = 'none';
+});
+// slider
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  freeMode: true,
+});
