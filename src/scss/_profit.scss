@@ -1,0 +1,528 @@
+.profit {
+  padding-top: 120px;
+}
+.profit--container {
+  background: #222231;
+  border-radius: 88px;
+  padding: 64px 148px 88px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.profit__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -1.92px;
+  line-height: 120%;
+  margin: 0 auto 24px;
+  max-width: 900px;
+  text-align: center;
+}
+.profit__video__content--button:hover {
+  transform: scale(0.97);
+}
+.profit__subtitle {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 140%;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.profit__content {
+  display: flex;
+}
+.profit__graphs--wrapper {
+  display: flex;
+  margin-inline-end: 48px;
+  min-height: 534px;
+  padding: 55px 0 10px;
+  position: relative;
+}
+.profit__designations {
+  display: flex;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.profit__designation__item {
+  align-items: center;
+  display: flex;
+  margin-inline-end: 20px;
+}
+.profit__designation__item--img {
+  border-radius: 50%;
+  height: 32px;
+  margin: 0 12px 0 0;
+  width: 32px;
+}
+.profit__designation__item--img--green {
+  background: #a0e720;
+}
+.profit__designation__item--text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 140%;
+}
+.profit__designation__item--img--gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(160, 231, 32, 0) -70.31%,
+    #a0e720 279.69%
+  );
+}
+.profit__graph {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 230px;
+}
+.profit__graph:not(:last-child) {
+  margin-inline-end: 24px;
+}
+.profit__graph--id1 {
+}
+.profit__graph--wrapper {
+  border-radius: 64px;
+  height: 100%;
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.profit__graph--estimate--id1 {
+  max-height: 212px;
+}
+.profit__graph--estimate {
+  align-items: center;
+  background-color: #b2eb39;
+  border-radius: 64px;
+  bottom: 0;
+  color: #353f47;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  left: 0;
+  line-height: 110%;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+.profit__graph--potential--id1 {
+  max-height: 314px;
+}
+.profit__graph--potential {
+  background: linear-gradient(180deg, rgba(178, 235, 57, 0), #b2eb39);
+  border-radius: 64px;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  left: 0;
+  line-height: 110%;
+  padding-top: 40px;
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+}
+.profit__graph--span {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #353f47;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 110%;
+  margin-bottom: 6px;
+  padding: 12px 32px;
+  width: 100%;
+}
+.profit__graph--id1 {
+  .profit__graph--text {
+    width: 90%;
+  }
+}
+.profit__graph--estimate--id2 {
+  max-height: 231px;
+}
+.profit__graph--potential--id2 {
+  max-height: 332px;
+}
+.profit__graph--text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  min-height: 40px;
+}
+.profit__graph--id2 {
+  .profit__graph--text {
+    width: 80%;
+  }
+}
+.profit__graph--estimate--id3 {
+  max-height: 273px;
+}
+.profit__graph--potential--id3 {
+  max-height: 362px;
+}
+
+.profit__captions--wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+}
+.profit__caption {
+  background: linear-gradient(
+    122deg,
+    hsla(0, 0%, 100%, 0.08) -20.48%,
+    hsla(0, 0%, 100%, 0) 85.57%
+  );
+  border-radius: 20px;
+  color: #fff;
+  flex-grow: 1;
+  padding: 16px 24px;
+}
+.profit__caption--id1,
+.profit__caption--id2 {
+  margin-bottom: 16px;
+}
+.profit__caption__title {
+  margin-bottom: 20px;
+}
+.profit__caption__title--precent {
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  line-height: 110%;
+}
+.profit__caption--text {
+  font-size: 14px;
+  line-height: 140%;
+  br {
+    display: none;
+  }
+}
+.profit__caption__title--pre {
+  color: #ffffff4d;
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  line-height: 110%;
+}
+.profit__caption--id3 {
+  margin-bottom: 12px;
+}
+.profit__caption--hint {
+  color: #fff;
+  font-size: 14px;
+  line-height: 140%;
+  opacity: 0.3;
+}
+.profit__video {
+  margin-top: 64px;
+}
+.profit__video--wrapper {
+  border-radius: 48px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  padding-bottom: 33.21%;
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+.profit__video--img {
+  border: none;
+  cursor: pointer;
+  height: calc(100% + 2px);
+  left: -1px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 2px);
+  z-index: 5;
+}
+.profit__video__content {
+  bottom: 32px;
+  color: #fff;
+  cursor: pointer;
+  left: 32px;
+  position: absolute;
+  z-index: 20;
+}
+.profit__video__content--timer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+.profit__video__content--title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.profit__video__content--button {
+  background: #fff;
+  border-radius: 72px;
+  color: #000;
+  cursor: pointer;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 14px 20px;
+  transition: transform 0.3s;
+}
+.profit__video__content--button--content {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+.profit__video__content--button--content--text {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.128px;
+  line-height: 126%;
+}
+@media screen and (max-width: 1180px) {
+  .profit__content {
+    flex-direction: column;
+  }
+  .profit__graphs--wrapper {
+    margin-inline-end: 0;
+    margin-bottom: 48px;
+    min-height: 570px;
+    padding: 44px 0 0;
+  }
+  .profit__captions--wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .profit__caption:not(:last-child) {
+    flex-basis: calc(50% - 6px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .profit--container {
+    padding: 64px 48px 80px;
+  }
+  .profit__subtitle {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 140%;
+  }
+  .profit__designation__item--text {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.128px;
+    line-height: 126%;
+  }
+  .profit__graph--id1 {
+    .profit__graph--text {
+      width: 70%;
+    }
+  }
+  .profit__graph {
+    max-width: 33.33%;
+    width: 100%;
+  }
+  .profit__graph--text {
+    min-height: 60px;
+  }
+  .profit__video {
+    margin-top: 48px;
+  }
+  .profit__video--wrapper {
+    padding-bottom: 61%;
+  }
+  .profit__video__content--title {
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profit__graphs--wrapper {
+    min-height: 534px;
+  }
+  .profit__designation__item--text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .profit__graph--wrapper {
+    border-radius: 32px;
+  }
+  .profit__graph--estimate {
+    border-radius: 32px;
+  }
+  .profit__graph--potential {
+    border-radius: 32px;
+    font-size: 16px;
+    line-height: 120%;
+    padding-top: 17px;
+  }
+  .profit__graph--span {
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: -0.056px;
+    line-height: 130%;
+    padding: 4px;
+  }
+  .profit__graph--id1 {
+    .profit__graph--text {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .profit {
+    padding-top: 56px;
+  }
+  .profit--container {
+    border-radius: 40px;
+    margin-bottom: 56px;
+    padding: 32px 20px;
+  }
+  .profit__title {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 112%;
+    margin-bottom: 12px;
+    max-width: 320px;
+  }
+  .profit__subtitle {
+    font-size: 14px;
+    letter-spacing: -0.056px;
+    line-height: 134%;
+    margin-bottom: 24px;
+  }
+  .profit__graphs--wrapper {
+    margin-bottom: 24px;
+    min-height: 298px;
+    padding-top: 44px;
+  }
+  .profit__designation__item {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 18px;
+  }
+  .profit__designation__item--img {
+    height: 20px;
+    margin: 0 0 8px;
+    width: 20px;
+  }
+  .profit__designation__item--text {
+    text-wrap: nowrap;
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    line-height: 130%;
+  }
+  .profit__graph:not(:last-child) {
+    margin-inline-end: 8px;
+  }
+  .profit__graph--wrapper {
+    margin-bottom: 8px;
+  }
+  .profit__graph--estimate--id1 {
+    max-height: 96px;
+  }
+  .profit__graph--estimate {
+    span {
+      font-size: 16px;
+      line-height: 120%;
+      min-width: 56px;
+    }
+  }
+  .profit__graph--potential--id1 {
+    max-height: 142px;
+  }
+  .profit__graph--id1 {
+    .profit__graph--text {
+      width: 80%;
+    }
+  }
+  .profit__graph--estimate--id2 {
+    max-height: 104px;
+  }
+  .profit__graph--potential--id2 {
+    max-height: 150px;
+  }
+  .profit__graph--id2 {
+    .profit__graph--text {
+      width: 80%;
+    }
+  }
+  .profit__graph--estimate--id3 {
+    max-height: 124px;
+  }
+  .profit__graph--potential--id3 {
+    max-height: 172px;
+  }
+  .profit__graph--text {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+    line-height: 130%;
+    min-height: 20px;
+  }
+  .profit__caption:not(:last-child) {
+    flex-basis: calc(50% - 8px);
+  }
+  .profit__caption__title {
+    margin-bottom: 4px;
+  }
+  .profit__caption__title--precent {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 112%;
+  }
+  .profit__caption--text {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    line-height: 130%;
+    br {
+      display: block;
+    }
+  }
+  .profit__caption__title--pre {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 112%;
+  }
+  .profit__caption--hint {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    line-height: 130%;
+  }
+  .profit__video {
+    margin-top: 24px;
+  }
+  .profit__video__content {
+    bottom: 16px;
+    left: 16px;
+  }
+  .profit__video__content--timer {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+  .profit__video__content--title {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 12px;
+  }
+  .profit__video__content--button--content--text {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .profit__video--wrapper {
+    border-radius: 24px;
+  }
+}

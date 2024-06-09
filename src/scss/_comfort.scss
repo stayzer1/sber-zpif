@@ -1,0 +1,213 @@
+.comfort {
+}
+.comfort--wrapper {
+  align-items: center;
+  display: flex;
+}
+.comfort__video {
+  max-width: 620px;
+  width: 100%;
+}
+.comfort__video__content__button:hover {
+  transform: scale(0.97);
+}
+.comfort__video--wrapper {
+  border-radius: 48px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  padding-bottom: 61.25%;
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+.comfort__video--img {
+  border: none;
+  cursor: pointer;
+  height: calc(100% + 2px);
+  left: -1px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 2px);
+  z-index: 5;
+}
+.comfort__video__content {
+  bottom: 32px;
+  color: #fff;
+  cursor: pointer;
+  left: 32px;
+  position: absolute;
+  z-index: 20;
+}
+.comfort__video__content--timer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+.comfort__video__content--title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.comfort__video__content__button {
+  background: #fff;
+  border-radius: 72px;
+  color: #000;
+  cursor: pointer;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 14px 20px;
+  transition: transform 0.3s;
+}
+.comfort__video__content__button--content {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+.comfort__video__content__button--content--text {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.128px;
+  line-height: 126%;
+}
+.comfort__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 48px;
+}
+.comfort__info__text {
+  max-width: 595px;
+}
+.comfort__info__text--title {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -1.92px;
+  line-height: 120%;
+  margin: 0 auto 24px;
+}
+.comfort__info__text--descr {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+.comfort__info--btn {
+  border-radius: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  min-width: 220px;
+  overflow: hidden;
+  padding: 24px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+  line-height: 110%;
+  position: relative;
+  z-index: 5;
+  background: linear-gradient(
+    100deg,
+    #06dcf9 -0.18%,
+    #18e952 52%,
+    #f0f420 101.15%
+  );
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 4;
+}
+.comfort__info--btn:hover {
+  background: linear-gradient(
+    100deg,
+    #06b7f9 -0.18%,
+    #22eb5a 52%,
+    #c6f428 101.15%
+  );
+}
+@media screen and (max-width: 1400px) {
+  .comfort__video {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .comfort--wrapper {
+    flex-direction: column;
+  }
+  .comfort__video {
+    margin-bottom: 32px;
+    max-width: unset;
+    width: 100%;
+  }
+  .comfort__info {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .comfort__info__text {
+    max-width: none;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .comfort {
+    margin-bottom: 56px;
+  }
+  .comfort__video {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .comfort__video--wrapper {
+    border-radius: 24px;
+  }
+  .comfort__video__content {
+    bottom: 16px;
+    left: 16px;
+    padding-right: 50px;
+  }
+  .comfort__video__content--timer {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+  .comfort__video__content--title {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 12px;
+  }
+  .comfort__video__content__button--content--text {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+  .comfort__info__text--title {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 112%;
+    margin-bottom: 12px;
+    max-width: 240px;
+  }
+  .comfort__info__text--descr {
+    font-size: 14px;
+    letter-spacing: -0.056px;
+    line-height: 134%;
+  }
+  .comfort__info--btn {
+    min-width: 97px;
+    padding: 12px 24px;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    line-height: 126%;
+  }
+}

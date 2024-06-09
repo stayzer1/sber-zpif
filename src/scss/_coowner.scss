@@ -1,5 +1,6 @@
 .coowner {
   margin-bottom: 122px;
+  padding-top: 120px;
 }
 .coowner__title {
   font-size: 48px;
@@ -17,10 +18,11 @@
   color: #fff;
   padding: 0 12px 10px;
 }
-.coowner__subtitle, .coowner__subtitle--1 {
+.coowner__subtitle,
+.coowner__subtitle--1 {
   font-size: 40px;
   font-weight: 400;
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
   line-height: 110%;
   margin-bottom: 32px;
   text-align: center;
@@ -40,7 +42,7 @@
 .coowner__item--text {
   font-size: 24px;
   font-weight: 400;
-  letter-spacing: -.24px;
+  letter-spacing: -0.24px;
   line-height: 120%;
   max-width: 328px;
   sup {
@@ -63,7 +65,7 @@
   font-size: 14px;
   line-height: 140%;
   margin: 0 auto 64px;
-  opacity: .4;
+  opacity: 0.4;
   text-align: center;
   sup {
     font-size: 10px;
@@ -73,7 +75,7 @@
 .coowner__subtitle--2 {
   font-size: 40px;
   font-weight: 400;
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
   line-height: 110%;
   margin-bottom: 32px;
   text-align: center;
@@ -87,7 +89,6 @@
 }
 .coowner--wrapper {
   display: flex;
-
 }
 .coowner__running-string {
   display: flex;
@@ -97,11 +98,14 @@
   position: relative;
 
   z-index: 1;
-
 }
 .coowner__running-string__item {
   align-items: center;
-  background: linear-gradient(270deg, hsla(0, 0%, 100%, 0) -27.79%, #fff 97.98%);
+  background: linear-gradient(
+    270deg,
+    hsla(0, 0%, 100%, 0) -27.79%,
+    #fff 97.98%
+  );
   border-radius: 80px 0 0 80px;
   display: flex;
   height: 70px;
@@ -120,7 +124,6 @@
   line-height: 110%;
   white-space: nowrap;
 }
-
 
 @media screen and (max-width: 1200px) {
   .coowner-br-mobile {
@@ -175,7 +178,7 @@
   .coowner__title {
     font-size: 24px;
     font-weight: 400;
-    letter-spacing: -.48px;
+    letter-spacing: -0.48px;
     line-height: 112%;
     margin-bottom: 24px;
     max-width: 320px;
@@ -184,10 +187,11 @@
     color: #fff;
     padding: 0 8px 6px;
   }
-  .coowner__subtitle, .coowner__subtitle--1 {
+  .coowner__subtitle,
+  .coowner__subtitle--1 {
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: -.28px;
+    letter-spacing: -0.28px;
     line-height: 130%;
     margin-bottom: 24px;
   }
@@ -206,7 +210,7 @@
   .coowner--disclaimer {
     font-size: 12px;
     font-weight: 400;
-    letter-spacing: .24px;
+    letter-spacing: 0.24px;
     line-height: 130%;
     margin: unset;
     margin-bottom: 48px;
@@ -214,7 +218,7 @@
   .coowner__subtitle--2 {
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: -.28px;
+    letter-spacing: -0.28px;
     line-height: 130%;
     margin-bottom: 24px;
   }
@@ -229,7 +233,7 @@
   .coowner__running-string__item--text {
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: .14px;
+    letter-spacing: 0.14px;
     line-height: 126%;
   }
 }

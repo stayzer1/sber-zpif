@@ -14,13 +14,40 @@
 
   <body class="main__body">
     <!-- Header -->
+    <div class="qr-wdiget">
+      <div class="qr-widget__modal">
+        <div class="qr-widget__modal--container">
+          <div>
+            <div class="qr-widget__item">
+              <div class="qr-widget__qrcode">
+                <img src="img/qr.png" alt="" />
+              </div>
+              <div class="qr-widget__text">
+                <h2 class="qr-widget__title">ЗПИФ «Современный 8»</h2>
+                <div class="qr-widget__descr">
+                  Отсканируйте QR-код и приобретите паи в мобильном приложении
+                  СберБанк Онлайн
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qr-widget__modal--close"></div>
+        </div>
+      </div>
+    </div>
+    <a
+      href="https://www.sberbank.com/sms/ifundrb1?product_code=fund_modern8&from=webzpifpromo"
+      class="button--link"
+    >
+      <button class="def__button--fixed">Купить паи</button>
+    </a>
     @@include('./html/_header.html')
 
     <!-- Main Page -->
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <main>
-          <section class="hero">
+          <section class="hero" id="hero">
             <div class="container">
               <div class="hero__content">
                 <h1 class="hero__title">
@@ -38,7 +65,7 @@
                   Вкладывать денежные средства в высококлассную коммерческую
                   недвижимость <span>от 30 000 рублей</span>
                 </h2>
-                <button class="hero--btn">Инвестировать</button>
+                <button class="hero--btn qr-modal">Инвестировать</button>
               </div>
               <div class="hero__background">
                 <img
@@ -255,27 +282,40 @@
               </div>
             </div>
           </section>
-          <section class="coowner">
+          <section class="coowner" id="coowner">
             <div class="container">
               <h1 class="coowner__title">
-                Как стать <span class="coowner__title--gradient">совладельцем</span> коммерческой недвижимости?
+                Как стать
+                <span class="coowner__title--gradient">совладельцем</span>
+                коммерческой недвижимости?
               </h1>
               <h3 class="coowner__subtitle--1">С помощью ЗПИФ</h3>
               <div class="coowner--items">
                 <div class="coowner__item">
                   <div class="coowner__item--text">
-                    Инвестор становится <br> совладельцем недвижимости
+                    Инвестор становится <br />
+                    совладельцем недвижимости
                   </div>
                   <div class="coowner__item__image">
-                    <img src="img/kv_1.png" alt="" class="coowner__item__image--img">
+                    <img
+                      src="img/kv_1.png"
+                      alt=""
+                      class="coowner__item__image--img"
+                    />
                   </div>
                 </div>
                 <div class="coowner__item">
                   <div class="coowner__item--text">
-                    Можно инвестировать <br>  через СберБанк онлайн<br class="coowner-br-mobile"> от 30 000 ₽
+                    Можно инвестировать <br />
+                    через СберБанк онлайн<br class="coowner-br-mobile" />
+                    от 30 000 ₽
                   </div>
                   <div class="coowner__item__image">
-                    <img src="img/kv_2.png" alt="" class="coowner__item__image--img">
+                    <img
+                      src="img/kv_2.png"
+                      alt=""
+                      class="coowner__item__image--img"
+                    />
                   </div>
                 </div>
                 <div class="coowner__item">
@@ -283,18 +323,26 @@
                     До 16% годовых<sup>1</sup>
                   </div>
                   <div class="coowner__item--text--descr">
-                    (за счет арендных платежей<br class="coowner-br-mobile-second"> и удорожания объектов)
+                    (за счет арендных платежей<br
+                      class="coowner-br-mobile-second"
+                    />
+                    и удорожания объектов)
                   </div>
                   <div class="coowner__item__image">
-                    <img src="img/kv_3.png" alt="" class="coowner__item__image--img">
+                    <img
+                      src="img/kv_3.png"
+                      alt=""
+                      class="coowner__item__image--img"
+                    />
                   </div>
                 </div>
               </div>
               <p class="coowner--disclaimer">
-                <sup>1 </sup>Прогнозная среднегодовая доходность Фонда без учета расходов на инфраструктуру фонда <br> (вознаграждения управляющей компании, специализированному депозитарию, регистратору, оценщику, аудитору)
+                <sup>1 </sup>Прогнозная среднегодовая доходность Фонда без учета
+                расходов на инфраструктуру фонда <br />
+                (вознаграждения управляющей компании, специализированному
+                депозитарию, регистратору, оценщику, аудитору)
               </p>
-
-
             </div>
             <h3 class="coowner__subtitle--2">Как это работает</h3>
             <div class="coowner__second-container">
@@ -302,28 +350,1333 @@
                 <div class="coowner__running-string">
                   <div class="coowner__running-string__item">
                     <div class="coowner__running-string__item--dot"></div>
-                    <div class="coowner__running-string__item--text">Инвесторы покупают паи</div>
+                    <div class="coowner__running-string__item--text">
+                      Инвесторы покупают паи
+                    </div>
                   </div>
                   <div class="coowner__running-string__item">
                     <div class="coowner__running-string__item--dot"></div>
-                    <div class="coowner__running-string__item--text">Управляющие инвестируют деньги в реальные объекты</div>
+                    <div class="coowner__running-string__item--text">
+                      Управляющие инвестируют деньги в реальные объекты
+                    </div>
                   </div>
                   <div class="coowner__running-string__item">
                     <div class="coowner__running-string__item--dot"></div>
-                    <div class="coowner__running-string__item--text"> Каждый квартал всю потенциальную прибыль от сдачи объектов в аренду распределяют между инвесторами </div>
+                    <div class="coowner__running-string__item--text">
+                      Каждый квартал всю потенциальную прибыль от сдачи объектов
+                      в аренду распределяют между инвесторами
+                    </div>
                   </div>
                   <div class="coowner__running-string__item">
                     <div class="coowner__running-string__item--dot"></div>
-                    <div class="coowner__running-string__item--text"> Инвесторы покупают паи</div>
+                    <div class="coowner__running-string__item--text">
+                      Инвесторы покупают паи
+                    </div>
                   </div>
                   <div class="coowner__running-string__item">
                     <div class="coowner__running-string__item--dot"></div>
-                    <div class="coowner__running-string__item--text"> Управляющие инвестируют деньги в реальные объекты</div>
+                    <div class="coowner__running-string__item--text">
+                      Управляющие инвестируют деньги в реальные объекты
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
+          <section class="comfort">
+            <div class="container">
+              <div class="comfort--wrapper">
+                <div class="comfort__video button5 video-button">
+                  <div class="comfort__video--wrapper">
+                    <img src="img/img.jpg" alt="" class="comfort__video--img" />
+                    <div class="comfort__video__content">
+                      <div class="comfort__video__content--timer">
+                        • 3 минуты
+                      </div>
+                      <h4 class="comfort__video__content--title">
+                        ЗПИФ: коротко и понятно о главном
+                      </h4>
+                      <button class="comfort__video__content__button">
+                        <div class="comfort__video__content__button--content">
+                          <svg
+                            class="why-profitable__video-poster-button-content-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.25391 4.41028C3.25391 3.37926 4.35939 2.72566 5.26315 3.22237L13.6067 7.81204C14.543 8.32683 14.543 9.67235 13.6067 10.1871L5.26388 14.7768C4.36011 15.2735 3.25463 14.6199 3.25463 13.5889L3.25391 4.41028Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                          <div
+                            class="comfort__video__content__button--content--text"
+                          >
+                            Смотреть ролик
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="comfort__info">
+                  <div class="comfort__info__text">
+                    <h2 class="comfort__info__text--title">
+                      Почему ЗПИФ — это удобно
+                    </h2>
+                    <div class="comfort__info__text--descr">
+                      Не нужно отбирать, обслуживать недвижимость и покупать её
+                      целиком. Заниматься подбором и управлением объекта будут
+                      профессиональные управляющие. А чтобы не тратить крупную
+                      сумму, можно купить подходящее количество паёв и получать
+                      потенциальную прибыль от сдачи и продажи объекта.
+                    </div>
+                  </div>
+                  <button class="comfort__info--btn qr-modal">Купить</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="profitable" id="profitable">
+            <div class="profitable--container">
+              <div class="profitable__content">
+                <div class="profitable__content__info">
+                  <div class="profitable__content__info__text">
+                    <h2 class="profitable__content__info__text--title">
+                      Какая недвижимость сегодня выглядит наиболее
+                      <br class="profitable--br" />
+                      <span
+                        class="profitable__content__info__text--title--gradient"
+                        >доходной</span
+                      ><span class="profitable--question">?</span>
+                    </h2>
+                    <div class="profitable__content__info__text--descr">
+                      Складские комплексы класса А — коммерческая недвижимость
+                      самого высокого качества. Это здания с низким износом и
+                      удобным расположением. На рынке — дефицит таких объектов.
+                      Поэтому на них высокий спрос у ритейлеров и e-commerce
+                      компаний — это крупные и надёжные арендаторы.
+                    </div>
+                  </div>
+                </div>
+                <div class="profitable__content__video button6 video-button">
+                  <div class="profitable__content__video--wrapper">
+                    <img
+                      src="img/poster.jpg"
+                      alt=""
+                      class="profitable__content__video--img"
+                    />
+                    <div class="profitable__content__video__content">
+                      <div class="profitable__content__video__content--timer">
+                        • 2 минуты
+                      </div>
+                      <h3 class="profitable__content__video__content--title">
+                        Современные складские комплексы
+                      </h3>
+                      <button
+                        class="profitable__content__video__content--button"
+                      >
+                        <div
+                          class="profitable__content__video__content--button--content"
+                        >
+                          <svg
+                            class="immovables-video__video-poster-button-content-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.25391 4.41028C3.25391 3.37926 4.35939 2.72566 5.26315 3.22237L13.6067 7.81204C14.543 8.32683 14.543 9.67235 13.6067 10.1871L5.26388 14.7768C4.36011 15.2735 3.25463 14.6199 3.25463 13.5889L3.25391 4.41028Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                          <span
+                            class="profitable__content__video__content--button--content--text"
+                          >
+                            Смотреть ролик
+                          </span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profitable__running">
+                <div class="profitable__running--items">
+                  <div class="profitable__running__item">
+                    <div class="profitable__running__item--icon"></div>
+                    <div class="profitable__running__item--text">
+                      Востребованы у ритейлеров
+                    </div>
+                  </div>
+                  <div class="profitable__running__item">
+                    <div class="profitable__running__item--icon"></div>
+                    <div class="profitable__running__item--text">
+                      Популярны из-за дефицита складов на рынке
+                    </div>
+                  </div>
+                  <div class="profitable__running__item">
+                    <div class="profitable__running__item--icon"></div>
+                    <div class="profitable__running__item--text">
+                      Стоимость таких объектов измеряется миллиардами рублей
+                    </div>
+                  </div>
+                </div>
+                <div class="profitable__running--items">
+                  <div class="profitable__running__item">
+                    <div class="profitable__running__item--icon"></div>
+                    <div class="profitable__running__item--text">
+                      Востребованы у ритейлеров
+                    </div>
+                  </div>
+                  <div class="profitable__running__item">
+                    <div class="profitable__running__item--icon"></div>
+                    <div class="profitable__running__item--text">
+                      Популярны из-за дефицита складов на рынке
+                    </div>
+                  </div>
+                  <div class="profitable__running__item">
+                    <div class="profitable__running__item--icon"></div>
+                    <div class="profitable__running__item--text">
+                      Стоимость таких объектов измеряется миллиардами рублей
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profitable__running--mobile">
+                <div class="profitable__running__item">
+                  <div class="profitable__running__item--icon"></div>
+                  <div class="profitable__running__item--text">
+                    Востребованы <br class="profitable__running--br" />
+                    у ритейлеров
+                  </div>
+                </div>
+                <div class="profitable__running__item">
+                  <div class="profitable__running__item--icon"></div>
+                  <div class="profitable__running__item--text">
+                    Стоимость таких объектов
+                    <br class="profitable__running--br" />
+                    измеряется миллиардами рублей
+                  </div>
+                </div>
+                <div class="profitable__running__item">
+                  <div class="profitable__running__item--icon"></div>
+                  <div class="profitable__running__item--text">
+                    Популярны из-за дефицита
+                    <br class="profitable__running--br" />
+                    складов на рынке
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="controls">
+            <div class="container">
+              <h1 class="controls__title">Кто управляет фондами</h1>
+              <h3 class="controls__subtitle">Управляющая компания ООО «СФН»</h3>
+              <ul class="controls__content">
+                <li class="controls__item">
+                  <div class="controls__item--text">
+                    Фонды компании – лучший инструмент для вложений в
+                    недвижимость
+                    <br />
+                    по оценке Wealth Navigator Awards
+                  </div>
+                  <div class="controls__item--img">
+                    <img
+                      src="img/kv-11.png"
+                      alt=""
+                      class="controls__item--img--image"
+                    />
+                  </div>
+                </li>
+                <li class="controls__item">
+                  <div class="controls__item--text">
+                    230 млрд рублей или 1,7 млн м² в управлении
+                  </div>
+                  <div class="controls__item--img">
+                    <img
+                      src="img/kv-22.png"
+                      alt=""
+                      class="controls__item--img--image"
+                    />
+                  </div>
+                </li>
+                <li class="controls__item">
+                  <div class="controls__item--text">
+                    Крупнейшая УК на рынке розничных фондов недвижимости
+                  </div>
+                  <div class="controls__item--img">
+                    <img
+                      src="img/kv-44.png"
+                      alt=""
+                      class="controls__item--img--image"
+                    />
+                  </div>
+                </li>
+                <li class="controls__item">
+                  <div class="controls__item--text">70 000</div>
+                  <div class="controls__item--text">частных клиентов</div>
+                  <div class="controls__item--img">
+                    <img
+                      src="img/kv-33.png"
+                      alt=""
+                      class="controls__item--img--image"
+                    />
+                  </div>
+                </li>
+                <li class="controls__item">
+                  <div class="controls__item--text">
+                    Деятельность УК контролируется
+                    <br />
+                    Банком России и специализированным депозитарием
+                  </div>
+                  <div class="controls__item--img">
+                    <img
+                      src="img/kv-55.png"
+                      alt=""
+                      class="controls__item--img--image"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="controls__background"></div>
+          </section>
+          <section class="doing">
+            <div class="container">
+              <h1 class="doing__title">
+                Что делает
+                <span class="doing__title--gradient">управляющая компания</span>
+              </h1>
+              <ul class="doing--content">
+                <li class="doing__item">
+                  <div class="doing__item--img"></div>
+                  <div class="doing__item--text">
+                    Осуществляет поиск и подбор недвижимости
+                  </div>
+                </li>
+                <li class="doing__item">
+                  <div class="doing__item--img"></div>
+                  <div class="doing__item--text">
+                    Организовывает обслуживание недвижимости
+                  </div>
+                </li>
+                <li class="doing__item">
+                  <div class="doing__item--img"></div>
+                  <div class="doing__item--text">
+                    Тщательно проверяет объекты
+                  </div>
+                </li>
+                <li class="doing__item">
+                  <div class="doing__item--img"></div>
+                  <div class="doing__item--text">
+                    Страхует все объекты недвижимости
+                  </div>
+                </li>
+                <li class="doing__item">
+                  <div class="doing__item--img"></div>
+                  <div class="doing__item--text">
+                    Ведёт всю коммуникацию с арендаторами
+                  </div>
+                </li>
+                <li class="doing__item">
+                  <div class="doing__item--img"></div>
+                  <div class="doing__item--text">
+                    Перечисляет в налоговую ваш НДФЛ с инвестиций в фонд
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="reasons">
+            <div class="container">
+              <h1 class="reasons__title">
+                Почему вложение
+                <br class="reasons__title--br" />
+                в <span class="reasong__title--gradient">ЗПИФ</span>
+                <br class="reasons__title-br-pc" />
+                может быть лучше, чем покупка квартиры?
+              </h1>
+              <div class="reasons--wrapper">
+                <div class="reasons__video button7 video-button">
+                  <div class="reasons__video--wrapper">
+                    <img
+                      src="img/poster3.jpg"
+                      alt=""
+                      class="reasons__video--img"
+                    />
+                    <div class="reasons__video__content">
+                      <div class="reasons__video__content--timer">
+                        • 5 минут
+                      </div>
+                      <h3 class="reasons__video__content--title">
+                        Выбираем между квартирой и складом
+                      </h3>
+                      <button class="reasons__video__content--button">
+                        <div class="reasons__video__content--button--content">
+                          <svg
+                            class="why-better__video-poster-button-content-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.25391 4.41028C3.25391 3.37926 4.35939 2.72566 5.26315 3.22237L13.6067 7.81204C14.543 8.32683 14.543 9.67235 13.6067 10.1871L5.26388 14.7768C4.36011 15.2735 3.25463 14.6199 3.25463 13.5889L3.25391 4.41028Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                          <div
+                            class="reasons__video__content--button--content--text"
+                          >
+                            Смотреть ролик
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <ul class="reasons__content">
+                  <li class="reasons__item">
+                    <div class="reasons__item--img"></div>
+                    <div class="reasons__item--descr">
+                      Не придётся подбирать недвижимость, делать ремонт, искать
+                      арендаторов и покупателей — всё сделает управляющая
+                      компания.
+                    </div>
+                  </li>
+                  <li class="reasons__item">
+                    <div class="reasons__item--img"></div>
+                    <div class="reasons__item--descr">
+                      Потенциальный доход от инвестиций в ЗПИФ — до 16% в
+                      год<sup>1</sup>. Это возможность получения более высокой
+                      доходности от инвестиций в недвижимость.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="reasons--disclaimer">
+                <sup>1 </sup>Прогнозная среднегодовая доходность Фонда без учета
+                расходов на инфраструктуру фонда <br />
+                (вознаграждения управляющей компании, специализированному
+                депозитарию, регистратору, оценщику, аудитору)
+              </div>
+            </div>
+          </section>
+          <section class="profit" id="profit">
+            <div class="profit--container">
+              <h1 class="profit__title">Прогнозируемая доходность</h1>
+              <h2 class="profit__subtitle">
+                График доходности активов по ЗПИФ «Современный 8» <br />
+                на разных этапах жизни, % годовых
+              </h2>
+              <div class="profit__content">
+                <div class="profit__graphs--wrapper">
+                  <ul class="profit__designations">
+                    <li class="profit__designation__item">
+                      <div
+                        class="profit__designation__item--img profit__designation__item--img--green"
+                      ></div>
+                      <div class="profit__designation__item--text">
+                        Рентный доход
+                      </div>
+                    </li>
+                    <li class="profit__designation__item">
+                      <div
+                        class="profit__designation__item--img profit__designation__item--img--gradient"
+                      ></div>
+                      <div class="profit__designation__item--text">
+                        Потенциальный рост стоимости
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="profit__graph profit__graph--id1">
+                    <div class="profit__graph--wrapper">
+                      <div
+                        class="profit__graph--estimate profit__graph--estimate--id1"
+                      >
+                        <span>9,1%–</span><span>10,5%</span>
+                      </div>
+                      <div
+                        class="profit__graph--potential profit__graph--potential--id1"
+                      >
+                        4,5%
+                      </div>
+                    </div>
+                    <div class="profit__graph--span">2024–2026</div>
+                    <div class="profit__graph--text">
+                      Формирование портфеля фонда
+                    </div>
+                  </div>
+                  <div class="profit__graph profit__graph--id2">
+                    <div class="profit__graph--wrapper">
+                      <div
+                        class="profit__graph--estimate profit__graph--estimate--id2"
+                      >
+                        <span>10,5%–</span><span>11,5%</span>
+                      </div>
+                      <div
+                        class="profit__graph--potential profit__graph--potential--id2"
+                      >
+                        4,5%
+                      </div>
+                    </div>
+                    <div class="profit__graph--span">2027–2029</div>
+                    <div class="profit__graph--text">
+                      Клиент получает выплаты дохода от аренды
+                    </div>
+                  </div>
+                  <div class="profit__graph profit__graph--id3">
+                    <div class="profit__graph--wrapper">
+                      <div
+                        class="profit__graph--estimate profit__graph--estimate--id3"
+                      >
+                        <span>12%–</span><span>13,6%</span>
+                      </div>
+                      <div
+                        class="profit__graph--potential profit__graph--potential--id3"
+                      >
+                        4,5%
+                      </div>
+                    </div>
+                    <div class="profit__graph--span">2030–2035</div>
+                    <div class="profit__graph--text">
+                      Рост за счет индексации по договорам аренды
+                    </div>
+                  </div>
+                </div>
+                <div class="profit__captions--wrapper">
+                  <div class="profit__caption profit__caption--id1">
+                    <div class="profit__caption__title">
+                      <span class="profit__caption__title--precent">11,5%</span>
+                    </div>
+                    <div class="profit__caption--text">
+                      годовых — примерный рентный поток
+                    </div>
+                  </div>
+                  <div class="profit__caption profit__caption--id2">
+                    <div class="profit__caption__title">
+                      <span class="profit__caption__title--pre">*</span>
+                      <span class="profit__caption__title--precent">4,5%</span>
+                    </div>
+                    <div class="profit__caption--text">
+                      годовых — потенциальный прирост <br />
+                      стоимости объектов недвижимости
+                    </div>
+                  </div>
+                  <div class="profit__caption profit__caption--id3">
+                    <div class="profit__caption__title">
+                      <span class="profit__caption__title--pre">до </span>
+                      <span class="profit__caption__title--precent">1,5%</span>
+                    </div>
+                    <div class="profit__caption--text">
+                      от среднегодовой стоимости чистых активов — вознаграждения
+                      и инфраструктурные расходы, которые удерживаются из
+                      средств Фонда
+                    </div>
+                  </div>
+                  <div class="profit__caption--hint">
+                    *Доходность от прироста имущества рассчитана на примере
+                    одного типового склада на основании индексации ставки аренды
+                  </div>
+                </div>
+              </div>
+              <div class="profit__video button8 video-button">
+                <div class="profit__video--wrapper">
+                  <img
+                    src="img/poster-profit.jpg"
+                    alt=""
+                    class="profit__video--img"
+                  />
+                  <div class="profit__video__content">
+                    <div class="profit__video__content--timer">• 4 минуты</div>
+                    <div class="profit__video__content--title">
+                      Доход приносит не любая коммерческая недвижимость:
+                      разбираемся с экспертом
+                    </div>
+                    <button class="profit__video__content--button">
+                      <div class="profit__video__content--button--content">
+                        <svg
+                          class="projected-profitability__video-poster-button-content-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3.25391 4.41028C3.25391 3.37926 4.35939 2.72566 5.26315 3.22237L13.6067 7.81204C14.543 8.32683 14.543 9.67235 13.6067 10.1871L5.26388 14.7768C4.36011 15.2735 3.25463 14.6199 3.25463 13.5889L3.25391 4.41028Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                        <div
+                          class="profit__video__content--button--content--text"
+                        >
+                          Смотреть ролик
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="conditions" id="conditions">
+            <div class="container">
+              <h1 class="conditions__title">Условия</h1>
+              <ul class="conditions--wraper">
+                <li class="conditions__item">
+                  <div class="conditions__item--question">
+                    Сколько можно вложить
+                  </div>
+                  <div class="conditions__item--answer">
+                    Сколько можно вложить
+                  </div>
+                </li>
+                <li class="conditions__item">
+                  <div class="conditions__item--question">
+                    Комиссия за покупку паёв онлайн или в офисе банка — надбавка
+                  </div>
+                  <div class="conditions__item--answer">0%</div>
+                </li>
+                <li class="conditions__item">
+                  <div class="conditions__item--question">
+                    Комиссия за погашение паёв — скидка
+                  </div>
+                  <div class="conditions__item--answer">0%</div>
+                </li>
+                <li class="conditions__item">
+                  <div class="conditions__item--question">Уровень риска</div>
+                  <div class="conditions__item--answer">Средний</div>
+                </li>
+                <li class="conditions__item">
+                  <div class="conditions__item--question">
+                    Подходит <br class="conditions__br--tablet" />
+                    для госслужащих
+                  </div>
+                  <div class="conditions__item--answer">Да</div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="guide" id="guide">
+            <div class="container">
+              <h1 class="guide__title">
+                <span class="guide__title--ascent">
+                  <span class="guide__title--gradient">Как</span>
+                </span>
+                купить паи ЗПИФ?
+              </h1>
+              <div class="swiper2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide guide__card">
+                    <div class="guide__card--img">
+                      <img src="img/1.jpg" alt="" />
+                    </div>
+                    <div class="guide__card--text">
+                      <p>Зайдите в СберБанк Онлайн ></p>
+                      <p>Накопления > Инвестиции ></p>
+                      <p>Фонды недвижимости</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide guide__card">
+                    <div class="guide__card--img">
+                      <img src="img/2.jpg" alt="" />
+                    </div>
+                    <div class="guide__card--text">
+                      <p>Выберите «Фонд Современный 8»</p>
+                      <p>и пройдите тестирование</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide guide__card">
+                    <div class="guide__card--img">
+                      <img src="img/3.jpg" alt="" />
+                    </div>
+                    <div class="guide__card--text">
+                      <p>Нажмите кнопку</p>
+                      <p>«Купить паи»</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide guide__card">
+                    <div class="guide__card--img">
+                      <img src="img/4.jpg" alt="" />
+                    </div>
+                    <div class="guide__card--text">
+                      <p>Получите паи</p>
+                      <p>на следующий день после</p>
+                      <p>их эмиссии</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="guide__navigation--wrapper">
+                  <button class="guide__navigation--prev">
+                    <span class="guide__navigation--icon"></span>
+                  </button>
+                  <button class="guide__navigation--next">
+                    <span class="guide__navigation--icon"></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="guide__button--wrapper">
+                <button class="guide__button qr-modal">
+                  <span class="guide__button--text"> В СберБанк Онлайн </span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="articles">
+            <div class="container">
+              <h1 class="articles__title">
+                Подготовили интересные статьи про инвестиции в ЗПИФ
+              </h1>
+              <ul class="articles--content">
+                <div class="articles__card--wrapper">
+                  <a
+                    href="https://sbersova.ru/sections/invest/kak-i-zachem-investirovat-v-nedvizhimost#"
+                    class="article__card"
+                  >
+                    <div class="articles__card--thumbnail">
+                      <img
+                        src="img/1-articles.jpg"
+                        alt="Как и зачем инвестировать в недвижимость"
+                      />
+                    </div>
+                    <div class="articles__card--content">
+                      <div class="articles__card--date-and-estimate">
+                        <div class="articles__card--date">19.09.2023</div>
+                        <div class="articles__card--estimate">• 8 минут</div>
+                      </div>
+                      <h3 class="articles__card--title">
+                        Как и зачем инвестировать в недвижимость
+                      </h3>
+                      <a
+                        href="https://sbersova.ru/sections/invest/kak-i-zachem-investirovat-v-nedvizhimost"
+                        class="articles__card--button"
+                        >Читать статью</a
+                      >
+                    </div>
+                  </a>
+                </div>
+                <div class="articles__card--wrapper">
+                  <a
+                    href="https://sbersova.ru/sections/invest/kak-zarabotat-na-zakrytykh-paevykh-fondakh-nedvizhimosti"
+                    class="article__card"
+                  >
+                    <div class="articles__card--thumbnail">
+                      <img
+                        src="img/2-articles.jpg"
+                        alt="Как заработать на закрытых паевых фондах недвижимости"
+                      />
+                    </div>
+                    <div class="articles__card--content">
+                      <div class="articles__card--date-and-estimate">
+                        <div class="articles__card--date">21.01.2022</div>
+                        <div class="articles__card--estimate">• 9 минут</div>
+                      </div>
+                      <h3 class="articles__card--title">
+                        Как заработать на закрытых паевых фондах недвижимости
+                      </h3>
+                      <a
+                        href="https://sbersova.ru/sections/invest/kak-zarabotat-na-zakrytykh-paevykh-fondakh-nedvizhimosti"
+                        class="articles__card--button"
+                        >Читать статью</a
+                      >
+                    </div>
+                  </a>
+                </div>
+              </ul>
+              <div class="swiper3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="articles__card--wrapper">
+                      <a
+                        href="https://sbersova.ru/sections/invest/kak-i-zachem-investirovat-v-nedvizhimost#"
+                        class="article__card"
+                      >
+                        <div class="articles__card--thumbnail">
+                          <img
+                            src="img/1-articles.jpg"
+                            alt="Как и зачем инвестировать в недвижимость"
+                          />
+                        </div>
+                        <div class="articles__card--content">
+                          <div class="articles__card--date-and-estimate">
+                            <div class="articles__card--date">19.09.2023</div>
+                            <div class="articles__card--estimate">
+                              • 8 минут
+                            </div>
+                          </div>
+                          <h3 class="articles__card--title">
+                            Как и зачем инвестировать в недвижимость
+                          </h3>
+                          <a
+                            href="https://sbersova.ru/sections/invest/kak-i-zachem-investirovat-v-nedvizhimost"
+                            class="articles__card--button"
+                            >Читать статью</a
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="articles__card--wrapper">
+                      <a
+                        href="https://sbersova.ru/sections/invest/kak-zarabotat-na-zakrytykh-paevykh-fondakh-nedvizhimosti"
+                        class="article__card"
+                      >
+                        <div class="articles__card--thumbnail">
+                          <img
+                            src="img/2-articles.jpg"
+                            alt="Как заработать на закрытых паевых фондах недвижимости"
+                          />
+                        </div>
+                        <div class="articles__card--content">
+                          <div class="articles__card--date-and-estimate">
+                            <div class="articles__card--date">21.01.2022</div>
+                            <div class="articles__card--estimate">
+                              • 9 минут
+                            </div>
+                          </div>
+                          <h3 class="articles__card--title">
+                            Как заработать на закрытых паевых фондах
+                            недвижимости
+                          </h3>
+                          <a
+                            href="https://sbersova.ru/sections/invest/kak-zarabotat-na-zakrytykh-paevykh-fondakh-nedvizhimosti"
+                            class="articles__card--button"
+                            >Читать статью</a
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="faq" id="faq">
+            <div class="container">
+              <h1 class="faq__title">Остались вопросы?</h1>
+              <div class="accordion">
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">Что такое ЗПИФ?</div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Это закрытый паевой инвестиционный фонд, у которого есть
+                      срок действия. Приобретаемые инвестиционные паи
+                      удостоверяют долю в имуществе, составляющем такой фонд.
+                      Купить паи можно у управляющей компании только при
+                      формировании фонда или при дополнительной выдаче, а
+                      погасить —в конце срока действия фонда. Поэтому фонд и
+                      называется закрытым. Купили паи фонда — стали совладельцем
+                      всех активов внутри.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">Как это работает?</div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      У ЗПИФ — свой жизненный цикл. Сначала управляющая компания
+                      формирует фонд, определяет срок его действия и выпускает
+                      паи — приобретая их инвесторы вкладывают деньги в активы
+                      фонда.
+                    </div>
+                    <div class="content__text">
+                      Весь срок действия ЗПИФ пайщики имеют возможность получать
+                      доход от аренды недвижимости, а по его окончании —
+                      компенсацию от продажи активов. Примерно так фонды и
+                      работают.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Какая недвижимость попадает в ЗПИФ?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Профессиональные управляющие отбирают только складские
+                      комплексы класса А — самого высокого в коммерческой
+                      недвижимости. Это здания с низким износом и удобным
+                      расположением. На рынке — дефицит таких объектов. Поэтому
+                      на них высокий спрос у ритейлеров и e-commerce компаний —
+                      это крупные и надёжные арендаторы.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Подходит ли ЗПИФ для диверсификации?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Как нельзя лучше! ЗПИФ позволяет добавить в свой портфель
+                      реальные объекты коммерческой недвижимости. Как правило,
+                      она хорошо переживает любые потрясения на рынке и защищает
+                      капитал от потерь.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Я могу продать паи до окончания срока фонда?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Да, на биржевом (если фонд допущен к обращению на бирже) и
+                      внебиржевом рынках (по договору купли-продажи) при наличии
+                      спроса. Для продажи паев на бирже нужно открыть брокерский
+                      и депозитарный счета, подать поручение регистратору и
+                      депозитарию на перевод паев на брокерский (торговый) счет,
+                      выставить торговое поручение брокеру на продажу паев.
+                      Обращаем внимание, что при досрочной реализации паев на
+                      бирже в связи с техническими особенностями торгов сделка
+                      возможна исключительно в отношении целой части
+                      инвестиционного пая.
+                    </div>
+                    <div class="content__text">
+                      Ещё паи фонда получится погасить досрочно, если на общем
+                      собрании пайщиков решат изменить правила фонда, или
+                      передать права и обязанности по договору управления фондом
+                      другой компании, или продлить срок действия такого
+                      договора.
+                    </div>
+                    <div class="content__text">
+                      Тогда, чтобы погасить паи, нужно будет проголосовать на
+                      общем собрании против принятия решения и в случае его
+                      принятия подать заявление в управляющую компанию о
+                      погашении паев. Это прописано в законе «Об инвестиционных
+                      фондах» и Правилах ЗПИФ.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">ЗПИФ — это вклад?</div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Нет! ЗПИФ и банковские депозиты — разные вещи. Поэтому
+                      инвестиции в фонды не застрахованы в Агентстве по
+                      страхованию вкладов. Вернуть деньги в любое время нельзя –
+                      только в случаях, указанных в Правилах ЗПИФ или можно
+                      продать паи.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Есть ли комиссия при покупке паев?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Нет! Управляющая компания не берёт комиссию. И не важно
+                      как вы купили паи: онлайн или в офисе банка.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">Какой уровень риска у ЗПИФ?</div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Средний — ниже, чем у акций, но выше, чем у консервативных
+                      активов.
+                    </div>
+                    <div class="content__text">
+                      У вложений в недвижимость есть риски. Может меняться цена
+                      объектов, ставки по аренде. А ещё могут быть форс-мажоры.
+                      Но если вы инвестируете в ЗПИФ, то потенциально эти риски
+                      могут быть ниже— подбирают объекты и управляют ими
+                      эксперты рынка.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Как и когда выплачивают доход?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Доход от доверительного управления фондом может
+                      выплачиваться раз в квартал сразу на ваш личный счёт.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Есть какие-то гарантии, что вложения принесут доход?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      По закону, управляющая компания не может давать гарантий
+                      ни доходности, ни сохранности, ни возвратности — стоимость
+                      активов может меняться в зависимости от ситуации на рынке.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Перед покупкой паев нужно пройти тестирование. Что это
+                      значит?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Для доступа к высокорисковым активам Банк России требует
+                      пройти обязательное тестирование для инвесторов, состоящее
+                      из семи вопросов. Сдать его можно прямо в СберБанк Онлайн.
+                    </div>
+                    <div class="content__text">
+                      Если не получилось пройти его с первого раза — не беда.
+                      Пересдать тест можно сразу, а количество попыток не
+                      ограничено.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Что нужно знать, чтобы пройти тест?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">1. Что такое ЗПИФ</div>
+                    <div class="content__text">
+                      Это закрытый паевой инвестиционный фонд, у которого есть
+                      срок действия. Купить паи ЗПИФ можно у управляющей
+                      компании только при формировании или при дополнительной
+                      выдаче паев, а погасить —в конце срока действия фонда.
+                      Поэтому он и называется закрытым.
+                    </div>
+                    <div class="content__text">
+                      2. Что такое инвестиционный пай, и как он работает
+                    </div>
+                    <div class="content__text">
+                      Инвестиционный пай — это ценная бумага, удостоверяющая
+                      долю её владельца в праве собственности на имущество,
+                      составляющее паевой инвестиционный фонд. Пай не
+                      гарантирует, что вы получите доход от роста стоимости
+                      активов фонда в будущем.
+                    </div>
+                    <div class="content__text">
+                      Стоимость пая не фиксирована, она может меняться — на это
+                      влияет множество факторов. В течение отчётного квартала
+                      выплаты от арендаторов накапливаются на счетах фонда —
+                      стоимость активов фонда и пая растут. А когда квартал
+                      заканчивается, пайщикам выплачивают доход* и количество
+                      денег на счетах фонда и стоимость пая соответственно
+                      снижаются.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">Сколько паёв можно купить?</div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Сколько угодно, но есть минимальная сумма инвестирования в
+                      фонд. Если хотите, можете попробовать купить все паи фонда
+                      при их выпуске.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Какие налоги платит пайщик физическое лицо?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Только НДФЛ. Управляющая компания сама рассчитывает и
+                      перечисляет его в бюджет, если его нужно платить.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Что будет после окончания срока действия ЗПИФ?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Начнётся процедура прекращения фонда: УК продаст активы,
+                      погасит паи и распределит денежные средства полученные от
+                      реализации имущества фонда между пайщиками.
+                    </div>
+                    <div class="content__text">
+                      Но если дата окончания договора управления фондом ещё не
+                      наступила, УК может созвать собрание пайщиков и провести
+                      голосование о продлении его срока. Если большинство
+                      пайщиков согласится, фонд продолжит работу до новой даты,
+                      а голосовавшие против получат возможность погасить свои
+                      паи.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__text">
+                      Что такое Общество с ограниченной ответственностью
+                      «Современные Фонды Недвижимости»?
+                    </div>
+                    <div class="trigger__img">
+                      <img
+                        src="img/arrow.svg"
+                        alt=""
+                        class="trigger__img--image"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      Это крупнейшая управляющая компания розничных фондов
+                      недвижимости — она занимает 85% рынка. СФН управляет
+                      инвестициями более 70 000 клиентов на общую сумму 230 млрд
+                      рублей или 1,5 млн квадратных метров.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="disclaimer">
+            <div class="container">
+              <div class="disclaimer__text">
+                <span class="disclaimer__text--bold">
+                  Реклама. Рекламодатель ООО «СФН», erid: 2Ranyn5oTKv
+                  <br />
+                  СберБанк Онлайн: возрастное ограничение 6+
+                  <br />
+                </span>
+                <br />
+                <span>* Выплата дохода не гарантирована</span>
+                <br />
+                <br />
+                <span>
+                  Стоимость инвестиционных паев может увеличиваться и
+                  уменьшаться, результаты инвестирования в прошлом не определяют
+                  доходов в будущем, государство не гарантирует доходность
+                  инвестиций в паевые инвестиционные фонды (далее — ПИФ). Прежде
+                  чем приобрести инвестиционный пай, следует внимательно
+                  ознакомиться с правилами доверительного управления ПИФ (далее
+                  — ПДУ ПИФ). Закрытый паевой инвестиционный фонд недвижимости
+                  «Современный 8» — правила доверительного управления
+                  зарегистрированы Банком России 16 ноября 2023 года за номером
+                  5790. Услуга доверительного управления ПИФ предоставляется ООО
+                  «СФН». Лицензия Банка России на осуществление деятельности по
+                  управлению инвестиционными фондами, паевыми инвестиционными
+                  фондами и негосударственными пенсионными фондами №
+                  21-000-1-01038 от 07.10.2020 г. Получить подробную информацию
+                  о ПИФ и ознакомиться с ПДУ ПИФ и с иной информацией,
+                  подлежащей раскрытию, можно по адресу: 121059, г. Москва, ул.
+                  Киевская, д. 7, корп. 2, этаж 5, ком. 40,41,42, на сайте
+                  https://www.sfn-am.ru, по телефону: (495) 252-22-24.
+                  Инвестиции сопряжены с риском. Договор доверительного
+                  управления не является договором банковского вклада или
+                  банковского счета. Передаваемые в управление денежные средства
+                  не застрахованы в государственной корпорации «Агентство по
+                  страхованию вкладов» в соответствии с федеральным законом «О
+                  страховании вкладов в банках РФ». Государство, ПАО Сбербанк и
+                  ООО «СФН» не дают никаких гарантий сохранности и возврата
+                  инвестируемых денежных средств. ПАО Сбербанк и ООО «СФН»
+                  являются разными лицами с самостоятельной ответственностью, не
+                  отвечающими по обязательствам друг друга. Для направления
+                  жалоб, а также внесудебного разрешения споров, связанных с
+                  услугами доверительного управления, клиент вправе обратиться в
+                  ООО «СФН», в ПАО Сбербанк, в НАУФОР, в Банк России. В случае
+                  невозможности внесудебного урегулирования спора клиент вправе
+                  обратиться в суд. Не является индивидуальной инвестиционной
+                  рекомендацией в значении статьи 6.1. и 6.2. Федерального
+                  закона «О рынке ценных бумаг».
+                </span>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <div class="container">
+              <div class="footer--wrapper">
+                <div class="footer__main footer__main-pc">
+                  <nav class="footer__nav">
+                    <div class="footer__nav--item">Что такое ЗПИФ</div>
+                    <div class="footer__nav--item">Что внутри</div>
+                    <div class="footer__nav--item">Доходность</div>
+                    <div class="footer__nav--item">Условия</div>
+                    <div class="footer__nav--item">Как купить</div>
+                    <div class="footer__nav--item">Вопросы и ответы</div>
+                  </nav>
+                  <div class="footer__copyright">© 1997—2024 ПАО Сбербанк</div>
+                </div>
+                <div class="footer__main footer__main-mobile">
+                  <a href="#hero" class="footer__upward">
+                    <span class="footer__upward--img"></span>
+                    <span class="footer__upward--text">Наверх</span>
+                  </a>
+                  <div class="footer__copyright">© 1997—2024 ПАО Сбербанк</div>
+                </div>
+                <div class="footer__regulations">
+                  <a
+                    href="https://www.sberbank.ru/ru/inform"
+                    class="footer__regulations--link"
+                    >Информация, обязательная к размещению</a
+                  >
+                  <br />
+                  <a
+                    href="https://www.sberbank.ru/ru/disclosure3921u"
+                    class="footer__regulations--link"
+                    >Раскрытие информации о банке как о профессиональном
+                    участнике рынка ценных бумаг</a
+                  >
+                </div>
+              </div>
+            </div>
+          </footer>
         </main>
       </div>
     </div>
@@ -334,7 +1687,6 @@
       </div>
     </div>
     <!-- Footer -->
-    <!-- @@include('./html/_footer.html') -->
   </body>
   <script></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -31,6 +31,13 @@ header {
   position: relative;
   z-index: 1000;
 }
+.menu__item-link:hover {
+  color: #505b65;
+}
+.header--btn:hover {
+  background: #505b65;
+  transition: 0.3s;
+}
 .menu {
   position: relative;
   z-index: 9999;
@@ -86,6 +93,26 @@ header {
   transition: background 0.4s;
   border-radius: 0 0 80px 80px;
 }
+
+.button--link {
+  text-decoration: none;
+}
+.def__button--fixed {
+  background-color: #353f47;
+  border-radius: 22px;
+  bottom: 24px;
+  color: #fff;
+  display: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.128px;
+  line-height: 126%;
+  padding: 12px 24px;
+  position: fixed;
+  right: 24px;
+  z-index: 98;
+}
+
 @media (max-width: 1400px) {
   .header--hide {
     opacity: 0;
@@ -222,6 +249,16 @@ header {
   }
   .nav {
     border-radius: 0 0 56px 56px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .def__button--fixed {
+    bottom: 12px;
+    display: block;
+    right: 12px;
+  }
+  .header--btn {
+    display: none;
   }
 }
 @media screen and (max-width: 540px) {

@@ -1,0 +1,228 @@
+.reasons {
+}
+.reasons__title {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -1.92px;
+  line-height: 120%;
+  text-align: center;
+}
+.reasons__title--br {
+  display: none;
+}
+.reasong__title--gradient {
+  background-image: url(../img/why-better-text-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+  padding: 0 12px 10px;
+}
+.reasons__title-br-pc {
+}
+.reasons--wrapper {
+  display: flex;
+  margin-bottom: 24px;
+  margin-top: 48px;
+}
+.reasons__video__content--button:hover {
+  transform: scale(0.97);
+}
+.reasons__video {
+  margin-right: 24px;
+  min-width: 620px;
+}
+.reasons__video--wrapper {
+  border-radius: 48px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  overflow: hidden;
+  padding-bottom: 69.2%;
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+.reasons__video--img {
+  border: none;
+  cursor: pointer;
+  height: calc(100% + 2px);
+  left: -1px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 2px);
+  z-index: 5;
+}
+.reasons__video__content {
+  bottom: 32px;
+  color: #fff;
+  cursor: pointer;
+  left: 32px;
+  position: absolute;
+  z-index: 20;
+}
+.reasons__video__content--timer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+.reasons__video__content--title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.reasons__video__content--button {
+  background: #fff;
+  border-radius: 72px;
+  color: #000;
+  cursor: pointer;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 14px 20px;
+  transition: transform 0.3s;
+}
+.reasons__video__content--button--content {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+.reasons__video__content--button--content--text {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.128px;
+  line-height: 126%;
+}
+.reasons__content {
+  grid-gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.reasons__item {
+  align-items: center;
+  background: #fff;
+  border-radius: 48px;
+  display: flex;
+  padding: 56px 32px;
+}
+.reasons__item--img {
+  background-image: url(../img/icon_tick.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
+  height: 40px;
+  width: 40px;
+}
+.reasons__item--descr {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 110%;
+  margin-left: 20px;
+  sup {
+    font-size: 12px;
+    position: absolute;
+    transform: translateY(-7px);
+  }
+}
+.reasons--disclaimer {
+  font-size: 14px;
+  line-height: 140%;
+  opacity: 0.4;
+  text-align: center;
+  sup {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .reasons--wrapper {
+    align-items: center;
+  }
+  .reasons__video {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .reasons__title--br {
+    display: block;
+  }
+  .reasons__title-br-pc {
+    display: none;
+  }
+  .reasons--wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .reasons__video {
+    margin-right: 0;
+    min-width: unset;
+    width: 100%;
+  }
+  .reasons__video__content--title {
+    padding-right: 50px;
+  }
+  .reasons__item {
+    border-radius: 40px;
+    padding: 32px;
+  }
+  .reasons--disclaimer {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reasong__title {
+    margin-bottom: 25px;
+  }
+  .reasons__content {
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .reasons {
+    margin-bottom: 56px;
+  }
+  .reasons__title {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 112%;
+    margin: 0 -2px 1px;
+    max-width: 450px;
+  }
+  .reasons__title--gradient {
+    padding: 0 6px 5px;
+  }
+  .reasons__video--wrapper {
+    border-radius: 24px;
+    padding-bottom: 61%;
+  }
+  .reasons__video__content {
+    bottom: 16px;
+    left: 16px;
+  }
+  .reasons__video__content--timer {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+  .reasons__video__content--title {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 12px;
+  }
+  .reasons__video__content--button--content--text {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .reasons--disclaimer {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    line-height: 130%;
+    br {
+      display: none;
+    }
+  }
+}

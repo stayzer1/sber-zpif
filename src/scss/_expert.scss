@@ -1,5 +1,4 @@
 .expert {
-  margin-bottom: 120px;
 }
 .expert__wrapper {
   display: flex;
@@ -28,6 +27,12 @@
   max-width: 540px;
   width: 100%;
   display: block;
+}
+.expert__video__content--button:hover {
+  transform: scale(0.97);
+}
+.expert__more__item--content--button:hover {
+  transform: scale(0.97);
 }
 .expert__video {
   align-items: flex-start;
@@ -197,7 +202,7 @@
   .expert__more--slider .swiper-slide {
     height: 100%;
     max-width: 324px;
-    width: 100%!important;
+    width: 100% !important;
   }
   .expert__more__item {
     border-radius: 20px;
@@ -208,18 +213,18 @@
   .expert__info__title {
     font-size: 24px;
     font-weight: 400;
-    letter-spacing: -.48px;
+    letter-spacing: -0.48px;
     line-height: 130%;
   }
   .expert__more__item--content--button {
     bottom: 32px;
     font-size: 14px;
-    letter-spacing: .14px;
+    letter-spacing: 0.14px;
   }
   .expert__info--descr {
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: -.056px;
+    letter-spacing: -0.056px;
     line-height: 134%;
     margin-top: 12px;
   }
@@ -245,7 +250,7 @@
   .expert__more--title {
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: -.28px;
+    letter-spacing: -0.28px;
     line-height: 130%;
   }
   .expert__more__item {
