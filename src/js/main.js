@@ -8,18 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
       qrWidgetModal.classList.add("open");
     });
   });
-  // Добавляем обработчик события для открытия модального окна
-
-  // Добавляем обработчик события для закрытия модального окна при клике на блок с классом "qr-widget__modal--close"
   qrWidgetClose.addEventListener("click", function () {
     qrWidgetModal.classList.remove("open");
   });
 
-  // Добавляем обработчик события для закрытия модального окна при клике вне блока с классом "qr-widget__modal"
   document.addEventListener("click", function (event) {
     if (
       !qrWidgetModal.contains(event.target) &&
-      !qrModal.contains(event.target)
+      !event.target.closest(".qr-modal")
     ) {
       qrWidgetModal.classList.remove("open");
     }
@@ -246,7 +242,7 @@ let tl11 = gsap.timeline({
     invalidateOnRefresh: !0,
   },
 });
-tl11.to(".profitable", { opacity: 1, y: 0 });
+tl11.to(".profitable", { opacity: 0, y: 0 });
 
 let tl12 = gsap.timeline({
   scrollTrigger: {
@@ -697,7 +693,7 @@ const container = document.querySelector(".coowner--wrapper");
 
 gsap.to(container, {
   x: -container.offsetWidth,
-  duration: 20,
+  duration: 10,
   repeat: -1,
   ease: "linear",
 });
@@ -887,8 +883,8 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: false,
   slidesPerView: "auto",
-  spaceBetween: 16,
   freeMode: true,
+  spaceBetween: 16,
 });
 const swiper2 = new Swiper(".swiper2", {
   // Optional parameters
@@ -979,24 +975,27 @@ const swiper3 = new Swiper(".swiper3", {
   direction: "horizontal",
   grabCursor: true,
   slidesPerView: "auto",
+  freeMode: true,
   centeredSlides: true,
-  spaceBetween: 20,
 });
 
 function accordion() {
-  const items = document.querySelectorAll(".accordion__item-trigger");
+  const items = document.querySelectorAll(".accordion__item");
   items.forEach((item) => {
     item.addEventListener("click", () => {
-      const parent = item.parentNode;
-      if (parent.classList.contains("accordion__item-active")) {
-        parent.classList.remove("accordion__item-active");
+      if (item.classList.contains("accordion__item-active")) {
+        item.classList.remove("accordion__item-active");
       } else {
-        document
-          .querySelectorAll(".accordion__item")
-          .forEach((child) => child.classList.remove("accordion__item-active"));
-        parent.classList.add("accordion__item-active");
+        item.classList.add("accordion__item-active");
       }
+    });
+
+    const content = item.querySelector(".accordion__item-content");
+    content.addEventListener("click", (event) => {
+      event.stopPropagation(); // Остановить всплытие события, чтобы не закрывался аккордеон при клике на контент
+      item.classList.remove("accordion__item-active");
     });
   });
 }
+
 accordion();

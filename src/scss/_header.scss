@@ -5,6 +5,7 @@ header {
   max-width: 1440px;
   width: 100%;
   transition-duration: 0.3s;
+  transition: top 0.3s ease;
   transition-property: background-color, opacity, transform;
 }
 .header--position {
@@ -78,10 +79,15 @@ header {
 }
 .header--hide {
   opacity: 0;
-  transform: translateY(-100px);
+  top: -100px !important;
+  top: unset;
 }
 .header--show {
   top: 0; /* Переместите заголовок на верхнюю часть окна браузера */
+}
+
+.menu__item__mobile {
+  display: none;
 }
 .header--scroll-up {
   background-color: #fff;
@@ -238,6 +244,38 @@ header {
     padding-top: 0;
   }
   .menu__item:last-child {
+    .menu__item-link {
+      border-bottom: none;
+    }
+  }
+  .menu__item__mobile {
+    display: block;
+    height: 100%;
+    margin-top: auto;
+    a {
+      display: block;
+    }
+  }
+  .burger--btn {
+    background: linear-gradient(
+      100deg,
+      #06b7f9 -0.18%,
+      #22eb5a 52%,
+      #c6f428 101.15%
+    );
+    border-radius: 22px;
+    box-sizing: border-box;
+    color: #fff;
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    max-height: 44px;
+    padding: 12px 24px;
+    transition: 0.3s;
+    width: 170px;
+    margin: 0 auto;
+  }
+  .menu__item:nth-child(6) {
     .menu__item-link {
       border-bottom: none;
     }
