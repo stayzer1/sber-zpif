@@ -122,10 +122,11 @@ header {
 @media (max-width: 1400px) {
   .header--hide {
     opacity: 0;
-    transform: translateY(-100px);
+    // transform: translateY(-100px);
+    top: -100px !important;
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   // .menu
   .header--btn {
     margin-left: auto;
